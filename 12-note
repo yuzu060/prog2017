@@ -1,0 +1,101 @@
+import turtle
+t = turtle.Turtle()
+
+import random
+aDice = Dice() #クラスをもとにオブジェクトを作る
+aDice.shoot() #オブジェクトを使う
+
+t.home()
+t.clear()
+
+t.forward(100)
+t.left(90)
+t.forward(100)
+
+def rect(x,y,a):
+ t.up()
+ t.home()
+ t.forward(x)
+ t.left(90)
+ t.forward(y)
+ t.down()
+ for i in range(4):
+  t.forward(a)
+  t.left(-90)
+#空行
+
+t.clear()
+rect(10, 10, 100)
+rect(10, -110, 100)
+rect(-110, 10, 100)
+rect(-110, -110, 100)
+
+#168
+class Dice:
+ face_num = 6
+ def shoot(self):
+   return random.randint(1, self.face_num)
+#空行
+
+import random
+aDice = Dice() #クラスをもとにオブジェクトを作る
+aDice.shoot() #オブジェクトを使う
+   
+#サイコロ,面の数,振る→クラス（本当は縦に三つ）
+#サイコロで6面で振るもの→オブジェクト(性質と機能をまとめたもの)
+
+aDice.face_num=1000
+aDice,shoot()
+
+#169
+class Dice:
+ def __init__(self, val):
+   self.face_num = val
+ def shoot(self):
+   return random.randint(1, self.face_num)
+#空行
+
+import random
+aDice = Dice(12) #クラスをもとにオブジェクトを作る
+
+
+
+用語説明
+オブジェクト指向プログラミング
+・クラス
+・クラス派生
+
+#179
+pythonって打とう
+#180
+2**10
+#181
+CUI(⇔GUI)
+
+exit()
+
+#182
+
+cd \cit\
+
+c: \cit>dir>files
+#結果をファイルに保存
+
+python num.py > result.txt
+
+import sys
+
+for line in sys.stdin:
+ orint()lone
+ 
+ import sys
+ sum = 0
+ for line in sys.stdin:
+  sum += int(line.strip())
+print(sum)
+
+
+
+
+
+
